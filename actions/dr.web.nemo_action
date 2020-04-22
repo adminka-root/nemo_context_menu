@@ -1,0 +1,11 @@
+[Nemo Action]
+Name=Scan for viruses files/folders
+Comment=Scan for viruses "%F"
+Name[ru]=Проверить на вирусы файлы/папки
+Comment[ru]=Проверить на вирусы "%F"
+Exec=drweb-gui %F
+Selection=any
+Extensions=any;
+Icon-Name=drweb-gui
+Quote=single
+Dependencies=drweb-gui;

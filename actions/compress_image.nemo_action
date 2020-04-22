@@ -1,0 +1,11 @@
+[Nemo Action]
+Name=Optimize png/jpg images
+Name[ru]=Оптимизировать изображения png/jpg
+Comment=Optimize images with jpegoptim / [optipng, advancecomp], mat
+Comment[ru]=Оптимизировать изображения c помощью jpegoptim / [optipng, advancecomp], mat
+Exec=<sh/compress_image.sh %F>
+Selection=notnone
+Extensions=jpg;png;jpeg;jpe;
+Quote=single
+Icon-Name=compress-image
+Dependencies=optipng;advdef;mat;jpegoptim;

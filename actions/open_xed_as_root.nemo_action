@@ -1,0 +1,13 @@
+[Nemo Action]
+Name=Open the file xed as a root
+Name[ru]=Открыть файл в xed как root
+Comment=Open "%f" using xed as a root
+Comment[ru]=Открыть "%f" в xed как root
+Exec=<sh/open_xed_root.sh %F>
+Selection=s
+Mimetypes= text/plain;
+Icon-Name=xed
+Quote=single
+Dependencies=xed;
+
+

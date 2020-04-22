@@ -1,0 +1,9 @@
+[Nemo Action]
+Name=Upload image to imgur
+Name[ru]=Загрузить изображение на imgur
+Exec=<sh/upload_to_imgur.sh -f %F>
+Selection=s
+Mimetypes=image/*;
+EscapeSpaces=true
+Icon-Name=imgur
+Dependencies=zenity;gawk;curl;

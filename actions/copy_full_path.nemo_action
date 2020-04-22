@@ -1,0 +1,10 @@
+[Nemo Action]
+Name=Copy full file path
+Name[ru]=Скопировать полный путь
+Comment=Copy full file path to clipboard
+Comment[ru]=Скопировать полный путь к файлу в буфер
+Exec=bash -c 'patch="$(echo "%F")"; if [[ -f "$patch" || -d "$patch" ]]; then echo -n "$patch" | xclip -i -selection clipboard; else notify-send -t 10000 -i "gtk-cancel" "Ошибка" "Не удалось скопировать ссылку в буфер!\nВернувшееся значение: \"$patch\""; fi; exit'
+Selection=s
+Extensions=any;
+Icon-Name=copy_full_path
+Dependencies=xclip;

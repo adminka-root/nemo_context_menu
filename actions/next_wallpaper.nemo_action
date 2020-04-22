@@ -1,0 +1,15 @@
+[Nemo Action]
+Name=Next Wallpaper
+Name[ru]=Следующие обои
+Comment=Rotate desktop wallpaper
+Comment[ru]=Сменить обои рабочего стола
+Exec=<sh/next_wallpaper.sh>
+Icon-Name=media-seek-forward-symbolic
+Selection=none
+Extensions=any;
+Conditions=desktop;
+Dependencies=gsettings;dbus-send;
+#sudo apt install dbus libglib2.0-bin
+
+# Вдохновлено https://github.com/smurphos/nemo_actions_and_cinnamon_scripts/blob/master/.local/share/nemo/actions/next-wallpaper.nemo_action
+#Conditions=gsettings org.cinnamon.desktop.background.slideshow slideshow-enabled;desktop;

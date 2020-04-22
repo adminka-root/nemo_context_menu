@@ -1,0 +1,11 @@
+[Nemo Action]
+Name=Sort by size folder
+Name[ru]=Сортировать по ncdu
+#Exec=gnome-terminal -x sh -c "ncdu %P"
+Exec=x-terminal-emulator -e bash -c "ncdu %P"
+Selection=none
+Extensions=any;
+Icon-Name=sort
+Quote=single
+Dependencies=ncdu;
+#terminal=$(readlink -m "$(which x-terminal-emulator)") && terminal=$(echo ${terminal##*/}) && terminal=$(echo ${terminal%.*}) && echo $terminal

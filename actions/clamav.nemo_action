@@ -1,0 +1,11 @@
+[Nemo Action]
+Name=Scan for viruses files/folders
+Comment=Scan for viruses "%F"
+Name[ru]=Проверить на вирусы файлы/папки
+Comment[ru]=Проверить на вирусы "%F"
+Exec=gnome-terminal --hide-menubar --geometry=90x28 -x sh -c ""$HOME"/.local/share/nemo/actions/sh/clamav.sh %F"
+Selection=any
+Extensions=any;
+Icon-Name=clamav
+Quote=single
+Dependencies=clamscan;yad;find;awk;gnome-terminal;

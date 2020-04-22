@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Umount a torrent files
+Name[ru]=Отмонтировать торрент-файлы
+Exec=<sh/btfs.sh -u>
+Selection=none
+Extensions=any;
+Icon-Name=application-x-bittorrent
+Dependencies=btfs;zenity;gawk;sed;wc;

@@ -1,0 +1,9 @@
+[Nemo Action]
+Name=Combine images
+Name[ru]=Объединить изображения
+Exec=<sh/image_montage.sh %F>
+Selection=m
+Extensions=bmp;gif;ico;jpe;jpg;jpeg;png;ppm;tif;tiff;
+Icon-Name=extension
+Quote=single
+Dependencies=yad;montage;

@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Загрузить на Firefox Send
+Exec=<sh/firefox_send.sh %F>
+Selection=notnone
+Extensions=any;
+Icon-Name=firefox_send
+Dependencies=xclip;yad;ffsend;
+EscapeSpaces=true

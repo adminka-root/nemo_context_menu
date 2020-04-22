@@ -1,0 +1,11 @@
+[Nemo Action]
+Name=Check hash
+Name[ru]=Проверить хеш
+Comment=Check the hash of the file
+Comment[ru]=Проверить хеш-сумму файла
+Exec=<sh/hash_sum.sh %F>
+Icon-Name=system-run-symbolic
+Selection=notnone
+Dependencies=md5sum;sha256sum;sha1sum;sha224sum;sha384sum;sha512sum;zenity;
+Extensions=nodirs;
+Quote=single

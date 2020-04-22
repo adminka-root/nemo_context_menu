@@ -1,0 +1,11 @@
+[Nemo Action]
+Name=Convert documents to pdf
+Comment=Convert MS Office documents, LibreOffice and txt to pdf
+Name[ru]=Конвертировать документы в pdf
+Comment[ru]=Конверт. документы MS Office, LibreOffice и txt в pdf
+Exec=<sh/docs_to_pdf.sh %F>
+Selection=notnone
+Extensions=doc;docx;rtf;txt;odt;xls;xsls;ods;odp;pptx;ppt;
+EscapeSpaces=true
+Icon-Name=nemo-pdf
+Dependencies=loimpress;localc;lowriter;

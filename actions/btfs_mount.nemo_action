@@ -1,0 +1,12 @@
+[Nemo Action]
+Name=Mount the torrent files
+Name[ru]=Монтировать торрент-файл(ы)
+Comment=Mount %F
+Comment[ru]=Монтировать %F
+Exec=<sh/btfs.sh -m %F>
+Selection=notnone
+Extensions=torrent;
+Icon-Name=application-x-bittorrent
+Quote=single
+Dependencies=btfs;zenity;gawk;sed;wc;
+#Mimetypes=application/x-bittorrent;
