@@ -8,4 +8,5 @@ Selection=notnone
 Extensions=jpg;png;jpeg;jpe;
 Quote=single
 Icon-Name=compress-image
-Dependencies=optipng;advdef;mat;jpegoptim;
+Dependencies=optipng;advdef;jpegoptim;
+# и mat или mat2

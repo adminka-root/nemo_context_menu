@@ -1,0 +1,11 @@
+[Nemo Action]
+Name=Make hidden files/folders
+Name[ru]=Сделать скрытыми файлы/папки
+Comment=Hide %F
+Comment[ru]=Скрыть %F
+Exec=<py/hidden.py %F>
+Selection=notnone
+Extensions=any;
+Icon-Name=changes-prevent-symbolic
+Dependencies=python3;
+Quote=single

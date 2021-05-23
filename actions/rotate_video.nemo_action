@@ -1,0 +1,11 @@
+[Nemo Action]
+Name=Rotate video files
+Comment=Rotate video files using ffmpeg
+Name[ru]=Повернуть видео файлы
+Comment[ru]=Повернуть видео файлы, используя ffmpeg
+Exec=<sh/rotate_video.sh %F>
+Selection=notnone
+Extensions=mp4;m4v;mkv;avi;3gp;flv;webm;mpeg;mov;3g2;mj2;
+EscapeSpaces=true
+Icon-Name=gtk-refresh
+Dependencies=notify-send;yad;ffmpeg;find;kill;killall;

@@ -1,0 +1,16 @@
+[Nemo Action]
+Name=Mount luks container
+Name[ru]=Монтировать luks контейнер
+Comment=Монтировать "%f" - luks container
+Comment[ru]=Монтировать "%f" - luks контейнер
+Exec=xvfb-run -a xterm -e "DISPLAY=:0.0 "$HOME/.local/share/nemo/actions/sh/mounting_containers.sh" -g -f %F"
+Selection=s
+Extensions=luks;
+Icon-Name=zip
+Quote=single
+Dependencies=yad;notify-send;cryptsetup;partprobe;udisksctl;grep;awk;file;losetup;xvfb-run;xterm;
+# для запуска nemo_action добавляются доп. зависимости xvfb-run;xterm;
+# (пакеты xvfb и xterm соответственно); чтобы скрипт работал в графике
+# необходимо, чтобы запоминался пароль sudo. для этого должен быть
+# запущен терминал. мы запускаем его в виртуальных иксах (дабы
+# терминал не мазолил глаза), а после их убиваем
